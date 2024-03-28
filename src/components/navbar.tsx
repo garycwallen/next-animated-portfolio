@@ -13,7 +13,7 @@ const links = [
   { url: '/contact', title: 'Contact' },
 ];
 
-export const Navbar = () => {
+export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   const topVariants = {
@@ -82,9 +82,9 @@ export const Navbar = () => {
           href='/'
           className='text-sm bg-black rounded-md p-1 font-semibold flex items-center justify-center'
         >
-          <span className='text-white mr-1'>Lama</span>
+          <span className='text-white mr-1'>nomadDev</span>
           <span className='w-12 h-8 rounded bg-white text-black flex items-center justify-center'>
-            .dev
+            .io
           </span>
         </Link>
       </div>
@@ -139,4 +139,4 @@ export const Navbar = () => {
       </div>
     </div>
   );
-};
+}

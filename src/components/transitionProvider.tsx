@@ -1,10 +1,10 @@
 'use client';
 
 import { AnimatePresence, motion } from 'framer-motion';
-import { Navbar } from '@/components/navbar';
+import Navbar from '@/components/navbar';
 import { usePathname } from 'next/navigation';
 
-export const TransitionProvider = ({ children }) => {
+export default function TransitionProvider({ children }) {
   const pathName = usePathname();
 
   return (
@@ -40,4 +40,4 @@ export const TransitionProvider = ({ children }) => {
       </div>
     </AnimatePresence>
   );
-};
+}
