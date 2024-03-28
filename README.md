@@ -1,5 +1,7 @@
 # Animated Portfolio with nextJS + Framer Animation
 
+![image](./public/Gary.png)
+
 ## Scripts
 - `npm run dev`: Start local server
 
