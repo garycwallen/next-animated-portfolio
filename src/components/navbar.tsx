@@ -1,8 +1,8 @@
 'use client';
 
-import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
+import { FaGithub } from 'react-icons/fa';
 import NavLink from './navLink';
 import { motion } from 'framer-motion';
 
@@ -91,7 +91,7 @@ export default function Navbar() {
       {/* SOCIAL */}
       <div className='hidden md:flex gap-4 w-1/3'>
         <Link href='https://github.com/garycwallen'>
-          <Image src='/github.png' alt='' width={24} height={24} />
+          <FaGithub size={24} />
         </Link>
       </div>
       {/* RESPONSIVE MENU */}
