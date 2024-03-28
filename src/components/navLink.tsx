@@ -6,7 +6,6 @@ import { usePathname } from 'next/navigation';
 export default function NavLink({ link }) {
   const pathName = usePathname();
 
-  console.log(pathName);
   return (
     <Link
       className={`rounded p-1 ${
